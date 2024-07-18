@@ -330,7 +330,9 @@
     <ojdbc11.version>23.4.0.24.05</ojdbc11.version>
   </properties>
   <repositories>
-    <id>CloudEra</id>
+    
+    <repository>
+      <id>CloudEra</id>
       <name>Cloudera Repository</name>
       <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
       <releases>
