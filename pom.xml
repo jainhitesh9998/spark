@@ -136,7 +136,7 @@
     <!-- note that this should be compatible with Kafka brokers version 0.10 and up -->
     <kafka.version>3.7.1</kafka.version>
     <!-- After 10.17.1.0, the minimum required version is JDK19 -->
-    <derby.version>10.16.1.1</derby.version>
+    <derby.version>10.16.1.2</derby.version>
     <parquet.version>1.14.1</parquet.version>
     <orc.version>2.0.1</orc.version>
     <orc.classifier>shaded-protobuf</orc.classifier>
@@ -179,7 +179,7 @@
     <scalafmt.skip>true</scalafmt.skip>
     <scalafmt.validateOnly>true</scalafmt.validateOnly>
     <scalafmt.changedOnly>true</scalafmt.changedOnly>
-    <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
+    <codehaus.jackson.version>1.9.13-cloudera.4</codehaus.jackson.version>
     <fasterxml.jackson.version>2.17.2</fasterxml.jackson.version>
     <fasterxml.jackson.databind.version>2.17.2</fasterxml.jackson.databind.version>
     <ws.xmlschema.version>2.3.1</ws.xmlschema.version>
@@ -330,6 +330,17 @@
     <ojdbc11.version>23.4.0.24.05</ojdbc11.version>
   </properties>
   <repositories>
+    <id>CloudEra</id>
+      <name>Cloudera Repository</name>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    
     <repository>
       <id>gcs-maven-central-mirror</id>
       <!--
